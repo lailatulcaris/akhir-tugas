@@ -1,0 +1,205 @@
+* {
+  /* border: 1px red solid; */
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e0fbe2;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wrapper untuk konten utama */
+main {
+  flex: 1;
+}
+
+a {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.carousel-item img {
+  max-width: 400%;
+  max-height: 580px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+  width: auto;
+  height: auto;
+}
+
+#carouselExampleIndicators {
+  max-width: 1900px; /* Sesuaikan lebar carousel sesuai kebutuhan */
+  margin: auto; /* Untuk membuat carousel berada di tengah */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centers items vertically */
+  background-color: #006769;
+  color: white;
+  padding-top: 20px;
+  box-shadow: 0 10px 15px rgba(26, 185, 185, 0.2);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px; /* Sesuaikan ukuran gambar logo */
+  height: auto; /* Sesuaikan ukuran gambar logo */
+  margin-right: 10px; /* Beri jarak antara gambar dan teks */
+  box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2);
+  opacity: 0.9;
+}
+
+.h3 {
+  margin: 0; /* Hilangkan margin default dari elemen h1 */
+}
+
+.brand {
+  display: flex;
+  align-items: center; /* Centers brand vertically */
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center; /* Centers nav items vertically */
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu a:hover {
+  color: #bf1722;
+}
+
+.hamburger-btn {
+  display: none;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #006666;
+  color: white;
+  box-shadow: 0 0 15px rgba(26, 185, 185, 0.4); /* Mengubah nilai offset y menjadi 0 */
+  margin-top: 20px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.github-icon {
+  font-size: 30px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+}
+
+.link-text {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #006666;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+/* card */
+#culture-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  transition: all 150ms ease-in;
+}
+
+.culture-card {
+  flex: 0 0 calc(20% - 15px); /* Menyesuaikan lebar kolom untuk 5 kolom */
+  padding-bottom: 10%;
+  overflow: hidden;
+  position: relative;
+}
+
+.culture-card .card {
+  height: 100%; /* Pastikan setiap kartu memiliki tinggi yang sama */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9; /* Warna latar belakang kartu */
+  border-radius: 20px; /* Border radius untuk sudut */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan kartu */
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Efek transisi saat kartu bergerak */
+}
+.culture-card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.culture-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333; /* Warna judul */
+}
+
+.culture-card .card-text {
+  font-size: 1rem;
+  margin-top: auto; /* Menempatkan "Province" dan "Address" di bagian atas */
+  color: #666; /* Warna teks */
+}
+
+.card:hover,
+.card:focus-visible {
+  scale: 1.05;
+  box-shadow: 0 2px 4px 2px #33333377;
+}
+
+.card-title-custom {
+  background-color: #48b832;
+  color: white;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px; /* Menjadikan semua sudut menjadi melengkung */
+  text-align: center; /* Untuk membuat teks berada di tengah */
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
